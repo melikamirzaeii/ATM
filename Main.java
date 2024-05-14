@@ -31,7 +31,7 @@ public class Main extends JFrame{
         elammojodi.setBackground(Color.lightGray);
         JPanel bardasht = new JPanel();
         bardasht.setLayout(null);
-        bardasht.setBounds(0,0,6,500);
+        bardasht.setBounds(0,0,600,500);
         bardasht.setBackground(Color.lightGray);
         JPanel kartbekart = new JPanel();
         kartbekart.setLayout(null);
@@ -46,11 +46,11 @@ public class Main extends JFrame{
         JButton en = new JButton("English");
         en.setBounds(0,200,150,50);
         JButton fa = new JButton("فارسی");
-        fa.setBounds(350,200,150,50);
+        fa.setBounds(450,200,150,50);
         JLabel label2 = new JLabel("Enter Password");
-        label2.setBounds(250,200,400,300);
+        label2.setBounds(250,50,400,300);
         JTextField passw = new JTextField(20);
-        passw.setSize(50,25);
+        passw.setBounds(250,250,100,50);
         passw.setEditable(true);
         JButton conf = new JButton("Confirm");
         conf.setBounds(200,350,250,50);
@@ -63,35 +63,35 @@ public class Main extends JFrame{
         JButton transf = new JButton("Transfer Money");
         transf.setBounds(300,300,150,55);
         JLabel newp = new JLabel("Enter New Password");
-        newp.setBounds(250,150,100,50);
+        newp.setBounds(250,150,200,50);
         JTextField npasswf = new JTextField(20);
         npasswf.setEditable(true);
-        npasswf.setSize(100,25);
+        npasswf.setBounds(250,250,100,50);
         JButton confi = new JButton("Confirm");
         confi.setBounds(400,300,100,25);
         JLabel balance = new JLabel("Your Account Balance Is: 94850000");
         balance.setBounds(250,150,200,100);
         JLabel d = new JLabel("Enter The Amount of Money To Deposit");
-        d.setBounds(150,200,250,100);
+        d.setBounds(200,100,350,100);
         JTextField money = new JTextField(20);
         money.setEditable(true);
-        money.setSize(200,50);
+        money.setBounds(250,200,100,50);
         JButton c = new JButton("Confirm");
-        c.setBounds(300,400,100,25);
+        c.setBounds(250,300,100,25);
         JLabel amount = new JLabel("Enter The Amount of Money");
-        amount.setBounds(300,100,150,50);
+        amount.setBounds(225,100,350,50);
         JTextField amountf = new JTextField(20);
         amountf.setEditable(true);
-        amountf.setSize(150,50);
+        amountf.setBounds(250,150,100,50);
         JLabel acnu = new JLabel("Enter The Account Number");
-        acnu.setBounds(300,300,150,50);
+        acnu.setBounds(225,200,350,50);
         JTextField acnuf = new JTextField(20);
         acnuf.setEditable(true);
-        acnuf.setSize(150,50);
+        acnuf.setBounds(250,250,100,50);
         JButton co = new JButton("Confirm");
-        co.setBounds(300,450,100,25);
+        co.setBounds(250,400,100,25);
         JLabel resu = new JLabel("The Action Was Completed Succesfully");
-        resu.setBounds(300,250,150,50);
+        resu.setBounds(200,200,300,50);
         en.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -209,4 +209,4 @@ public class Main extends JFrame{
         frame.setVisible(true);
     }
 
-    }
+}
